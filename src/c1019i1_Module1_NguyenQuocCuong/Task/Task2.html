@@ -5,8 +5,56 @@
     <title>Title</title>
 </head>
 <body>
-<script>
-
-</script>
+    <form name="NL">
+        Tên Khách Hàng  :<br>  <input  type="text" id="TenKH"><br>
+        Số CMND :<br>  <input  type="text" id=" SoCMND"><br>
+        Ngày Sinh: <br> <input type="date"   id="NgaySinh"><br>
+        Email:<br>     <input  type="email"  id="Email"><br>
+        Địa Chỉ:<br>   <input  type="text"   id="DiaChi"><br>
+        Giảm Giá:<br>  <input  type="number" id="Giamgia"><br>
+        Số Lượng Đi Kèm:<br> <input  type="number" id="SlDiKem"><br>
+        Số Ngày Thuê: <br> <input type="number"    id="NgayThue"><br>
+        Loaị Khách Hàng : <select>
+                       <option LoaiKH="Diamond">Diamond</option>
+                       <option LoaiKH="Platinum">Platinum</option>
+                       <option LoaiKH="Gold">Gold</option>
+                       <option LoaiKH="Silver">Silver</option>
+                        <option LoaiKH="Member">Member</option>
+                   </select>
+        Loaị Dịch Vụ : <select>
+                       <option LoaiDV="Villa">Villa</option>
+                       <option LoaiDV="House">House</option>
+                       <option LoaiDV="Room">Room</option>
+                  </select>
+        Loại Phòng Thuê : <select>
+                       <option LoaiPT="Vip">Vip</option>
+                       <option LoaiPT="Business">Business</option>
+                       <option LoaiPT="Gold">Gold</option>
+                   </select>
+        <button onclick="hienthi();return false;">Hien thi</button>
+    </form>
+    <script>
+        function hienthi(tenkh,scmnd,ngaysinh,email) {
+            var tenkh=document.getElementById("TenKH").value;
+            //var scmnd=document.getElementById("SoCMND").value;
+            //var ngaysinh=document.getElementById("NgaySinh").value;
+            //var email=document.getElementById("Email").value;
+            //var diachi=document.getElementById("DiaChi").value;
+            //var giamgia=document.getElementById("Giamgia").value;
+            //var sldk=document.getElementById("SlDiKem").value;
+            //var ngaythue=document.getElementById("NgayThue").value;
+            alert(
+                "Thông Tin Khách Hàng"+
+                //"\nTên" + tenkh+
+                //"\nSố CMND"+scmnd+
+                //"\nNgày Sinh"+ngaysinh+
+                //"\nEmail"+email+
+                //"\nĐịa Chỉ"+diachi+
+                //"\nGiảm Giá"+giamgia+
+                //"\nSố Lượng Đi Kèm"+sldk+
+                //"\nNgày Thuê"+ngaythue
+            );
+        }
+    </script>
 </body>
 </html>
